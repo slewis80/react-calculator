@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 110%;
+  box-sizing: border-box;
+}
+
+#root {
+  text-align: center;
+}
+
+.calculatorTitle{ 
+  font-size:30px; 
+  font-weight: bold;
+  background: #fff; 
+  width: 400px; 
+  padding: 10px 10px; 
+  margin: 0 auto; 
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+  color: olive; 
+} 
+
+.mainCalc{ 
+  margin:0px; 
+  padding:0px; 
+  box-sizing: border-box; 
+} 
+
+#questionDisplay {
+  border-top: 2px solid black;
+  border-bottom: 0px;
+}
+
+.screenRow input{ 
+  width: 400px; 
+  border-top: 0px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  background: #ddd; 
+  color: black; 
+  padding: 10px; 
+  text-align: right; 
+  box-sizing: border-box;
+} 
+
+button { 
+  width: 100px; 
+  background: black; 
+  border: 1px solid rgb(83, 79, 79); 
+  padding: 10px 20px; 
+  color: whitesmoke; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+} 
+  
+button:active { 
+    background: rgb(58, 56, 56); 
+} 
