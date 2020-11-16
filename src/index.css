@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-size: 110%;
-  box-sizing: border-box;
+  background-color: rgb(17, 17, 17);
+  font-family: 'Goldman', cursive;
 }
 
 #root {
@@ -12,50 +12,114 @@ body {
 .calculatorTitle{ 
   font-size:30px; 
   font-weight: bold;
-  background: #fff; 
-  width: 400px; 
-  padding: 10px 10px; 
-  margin: 0 auto; 
-  margin-top: 20px; 
-  margin-bottom: 20px; 
-  color: olive; 
+  background-color: rgb(17, 17, 17);
+  width: 100%; 
+  padding: 10px; 
+  margin: 10px auto; 
+  color: orange; 
 } 
 
 .mainCalc{ 
-  margin:0px; 
-  padding:0px; 
-  box-sizing: border-box; 
+  margin: 20px auto 20px; 
+  padding: 0px; 
 } 
 
 #questionDisplay {
   border-top: 2px solid black;
   border-bottom: 0px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Goldman', cursive;
 }
 
-.screenRow input{ 
-  width: 400px; 
+#answerDisplay {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Goldman', cursive;
+}
+
+.screenRow input { 
+  width: 403px; 
   border-top: 0px;
   border-left: 2px solid black;
   border-right: 2px solid black;
   background: #ddd; 
   color: black; 
-  padding: 10px; 
+  padding: 5px 17px; 
   text-align: right; 
   box-sizing: border-box;
 } 
 
+.buttonsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  justify-content: center;
+  padding: 0px;
+  margin: 0px auto;
+}
+
 button { 
   width: 100px; 
+  height: 75px;
   background: black; 
   border: 1px solid rgb(83, 79, 79); 
-  padding: 10px 20px; 
-  color: whitesmoke; 
+  padding: 0px; 
+  color: orange; 
   text-align: center; 
   text-decoration: none; 
   display: inline-block; 
-  font-size: 16px; 
+  font-size: 25px; 
+  font-weight: bold;
+  font-family: 'Goldman', cursive;
+  margin: 0;
 } 
+
+.no-top-border {
+  border-top: 0px;
+}
+
+.no-bottom-border {
+  border-bottom: 0px;
+}
   
 button:active { 
     background: rgb(58, 56, 56); 
 } 
+
+button:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.copyright {
+  text-decoration: none;
+  color: orange;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 450px) {
+  .calculatorTitle{ 
+    font-size: 20px;
+  }
+
+  .screenRow input {
+    width: 302px;
+  }
+
+  .buttonsContainer {
+    grid-template-columns: repeat(4, 75px);
+  }
+
+  button {
+    width: 75px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  .copyright {
+    font-size: 18px;
+  }
+}
