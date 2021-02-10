@@ -4,7 +4,7 @@ function Footer() {
 
     return (
         <div>
-            <a href="http://www.sabrinalewis.me">
+            <a href="http://slewis80.github.io">
                 <h1 className="copyright">(c) 2020  Sabrina  Lewis</h1></a>
         </div>
     )
